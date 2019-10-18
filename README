@@ -1,0 +1,10 @@
+Directories 
+CYANO-MLP: Python code for CYANO-MLP
+LOOCV: Scripts and files to perform Leave-One-Out Cross-Validation analysis
+Leave_Clade_Out: Code and files for additional iterations of CYANO-MLP
+data: tRNAs sequences for plastids and cyanobacteria and ncbi accession numbers for cyanobacterial genomes
+
+Files
+eight_model_LOOCV_scores_alpha.txt: cyanobacterial score vectors calculated using LOOCV used for training CYANO-MLP
+glithophora.scores.txt: score vector for G. lithophora genomes
+plastid.tRNAs.aligned.final.scores: score vectors for plastid genomes

@@ -1,0 +1,11 @@
+all_Arthrospira_maxima_CS-328_id.fas.out:LCV	 5.90	 7.17	 8.78	 4.58	 4.73	 3.76	 5.24	Arthrospira_maxima_CS-328
+all_Arthrospira_platensis_NIES-39_id.fas.out:LCV	 5.33	 6.43	 7.68	 4.08	 4.25	 3.51	 4.75	Arthrospira_platensis_NIES-39
+all_Arthrospira_platensis_str._Paraca_id.fas.out:LCV	 5.68	 7.12	 7.63	 4.00	 4.25	 3.67	 4.55	Arthrospira_platensis_str._Paraca
+all_Lyngbya_majuscula_3L_id.fas.out:LCV	 4.86	 5.89	 7.19	 3.95	 4.01	 3.39	 4.60	Lyngbya_majuscula_3L
+all_Lyngbya_sp._PCC_8106_id.fas.out:LCV	 5.43	 6.57	 7.97	 4.31	 4.31	 3.74	 5.02	Lyngbya_sp._PCC_8106
+all_Microcoleus_chthonoplastes_PCC_7420_id.fas.out:LCV	 5.20	 6.14	 7.20	 4.01	 4.11	 3.41	 4.54	Microcoleus_chthonoplastes_PCC_7420
+all_Microcoleus_vaginatus_FGP-2_id.fas.out:LCV	 4.96	 6.06	 7.36	 3.93	 4.05	 3.48	 4.67	Microcoleus_vaginatus_FGP-2
+all_Oscillatoria_PCC_7112_uid183110_id.fas.out:LCV	 4.90	 6.04	 7.35	 3.94	 4.05	 3.51	 4.72	Oscillatoria_PCC_7112_uid183110
+all_Oscillatoria_acuminata_PCC_6304_uid183003_id.fas.out:LCV	 5.03	 6.04	 7.20	 3.90	 4.04	 3.49	 4.55	Oscillatoria_acuminata_PCC_6304_uid183003
+all_Oscillatoria_sp._PCC_6506_id.fas.out:LCV	 4.98	 6.06	 7.27	 3.97	 4.11	 3.47	 4.68	Oscillatoria_sp._PCC_6506
+all_Trichodesmium_erythraeum_IMS101_id.fas.out:LCV	 5.77	 7.15	 8.43	 4.61	 4.60	 3.84	 5.43	Trichodesmium_erythraeum_IMS101

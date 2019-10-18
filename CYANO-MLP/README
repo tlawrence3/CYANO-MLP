@@ -1,0 +1,7 @@
+MLPscikit-learn.py: CYANO-MLP python script
+eight_model_LOOCV_scores_alpha.txt: tab-sep LOOCV score vectors for cyanobacterial for training CYANO-MLP
+taxon_eight_clades_new_alpha.txt: tab-sep cyanobacterial genome names and clade label
+
+Using CYANO-MLP:
+1. Run python3 MLPscikit-learn.py ../plastid.tRNAs.aligned.final.scores to classify plastids.
+2. To run LOOCV, permutation test, or network arch optimization uncomment code and run MLPscikit-learn.py.

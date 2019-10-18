@@ -1,0 +1,154 @@
+#!/usr/bin/env perl
+
+use Parallel::ForkManager;
+use File::chdir;
+use Cwd;
+
+$started = 0;
+($taxonfile,$seqfile,$proc_count) = @ARGV;
+my $pm = Parallel::ForkManager->new($proc_count);
+#load sequences from sequence file
+open(SEQFILE,"$seqfile");
+while(<SEQFILE>){
+    chomp;
+    if(/^\>/){
+	if($started == 1){
+	    $seqhash{$totaltag} = $seq;
+	    $seq = '';
+	}
+	@tag = split/\|/;
+	$genus_species_strain = $tag[3];
+        $totaltag = $_;
+       	$exists{$genus_species_strain} = 1;
+    }
+    else{
+	$started = 1;
+	$seq .= $_;
+    }
+}
+$seqhash{$totaltag} = $seq;
+close(SEQFILE);
+
+#Load hash with order information: specified by taxonfile.txt 
+#(tab-delimited file with 3-letter abbrev and list of genomes);
+
+open(TAXONFILE,$taxonfile);
+while(<TAXONFILE>){
+    chomp;
+    @line = split ("\t",$_);
+    push(@{$grouping{$line[0]}},$line[1]);
+    $group{$line[1]} = $line[0];
+}
+close(TAXONFILE);
+
+#make all starter logos for all clades
+
+foreach my $clade (sort keys %grouping){ #for all clades
+    my $pid = $pm->start and next;
+    $editcladefile = join "",$clade,"_all_temp.fas";
+    $cladefile = join "",$clade,"_all.fas";
+    open(EDITCLADEFILE,">$cladefile");
+    close(EDITCLADEFILE);
+    foreach my $species (@{ $grouping{$clade} }){
+	$grepspecies = $species;
+	if($grepspecies =~ /\(/){
+	    @newline = split(/\(/, $grepspecies);
+	    $grepspecies = join "",$newline[0],"\\(",$newline[1];
+	    @newline = split(/\)/,$grepspecies);
+	    $grepspecies = join "", $newline[0],"\\)";
+	}
+	my $grepper = join "","\"\\|",$grepspecies,"\\|\"";
+	$getseqs = "fasgrep -i $grepper $seqfile >> $cladefile";
+	system $getseqs;
+    }
+#    system "fassub '_(RCS|RWZ)_' $cladevariable < $editcladefile > $cladefile"; 
+    foreach my $c (split "",qw/ACDEFGHIJKLMNPQRSTVWXY/){
+	$f=join "",$clade,"_",$c,".fas";
+	system "fasgrep ^$c < $cladefile > $f";
+    }
+    $fasconvert = join "","fasconvert -fo clustalw ",$clade,"_[A-Z].fas";
+    system $fasconvert;
+    system "tsfm -s -x 15 --logo $clade 2> /dev/null";
+    $pm->finish;
+}
+$pm->wait_all_children;
+
+## Now leave one out cross-validation will score each genome to each logo.  Only have
+## to re-make one logo every time.  All other logos stay the same.  
+$cladestring ="";  ## FOR LOGOFUN CLASSIFIER OPTIONS
+foreach my $clade (sort keys %grouping){
+    $cladestring .=$clade;
+    $cladestring .=" ";
+}
+$progress = 0;
+foreach my $clade (keys %grouping){
+    $total += scalar(@{$grouping{$clade}})
+}
+@states = qw/A G C U/;
+$current = getcwd;
+foreach my $clade (sort keys %grouping){ # for all clades
+    $cladefile = join "",$clade,"_all.fas"; ##THIS WILL BE WHERE SEQUENCES ARE PULLED FROM TO SHORTEN TIME
+    foreach my $leftout (@{$grouping{$clade}}){
+	my $pid = $pm->start and next;#TL
+	$progress++;
+	print "$progress of $total\n";
+	$grepleftout = $leftout; ## GENOME TO LEAVE OUT
+	if($leftout =~ /\(/){ ### CANNOT GREP WITH FUNNY CHARACTERS
+	    @newline = split(/\(/, $grepleftout); 
+            $grepleftout = join "",$newline[0],"\\(",$newline[1];
+            @newline1 = split(/\)/,$grepleftout);
+            $grepleftout = join "", $newline1[0],"\\)";
+        }
+	my $grepper = join "","\"\\|",$grepleftout,"\\|\""; ## HAVE TO QUOTE REGEX
+	$grepleftout =~ tr/\/\(\)\\/\./; ## TO MAKE FILENAME THAT WORKS
+	$totalseqfile = join "","no_",$grepleftout,"_id.fas";
+	$totalseqdir = join "","no_",$grepleftout; #TL
+	system "mkdir $totalseqdir";
+	system "cp $cladefile $totalseqdir/"; #TL
+	system "cp final_structureString.txt $totalseqdir/"; #TL
+	system "cp bplogo_score.py $totalseqdir/";
+	foreach my $prefix (keys %grouping){ #TL
+	  if ($prefix eq $clade){
+	     next;
+	  }
+	  foreach my $state (@states){
+		  $file = join '', $state,"_",$prefix,".eps";
+		  system "cp $file $totalseqdir/";
+	  }
+         }
+	$CWD = "$current/$totalseqdir";
+	$totalseqs =  "fasgrep -v -i $grepper $cladefile  > $totalseqfile"; ##EXTRACT EVERYTHING BUT LEFT OUT
+	system $totalseqs;
+	foreach my $c (split "",qw/ACDEFGHIJKLMNPQRSTVWXY/){ ## CUT UP INTO FUNCTIONAL CLASS FILES
+	    $f=join "",$clade,"_",$c,".fas"; #when logofun is working
+	    #$f=join "",$grepleftout,$clade,"_",$c,".fas";#when logofun is not working... do manual
+	    system "fasgrep ^$c < $totalseqfile > $f";
+	}
+	$fasconvert = join "","fasconvert -fo clustalw ",$clade,"_[A-Z].fas"; ## PUT IN CORRECT FORMAT (added $grepleftout)
+	system $fasconvert;
+        system "tsfm -s -x 15 --logo $clade 2> /dev/null";
+	$leftoutseqfile = $leftout;
+	$leftoutseqfile =~ tr/\/\(\)\\/\./;
+	$excludeseqfile = join "",$leftoutseqfile,"_id.fas";
+	system "fasgrep -i $grepper $cladefile > $excludeseqfile.mid";
+	$fassub = join "","fassub '\\|",$clade,"\\|' '\\|LCV\\|' < $excludeseqfile.mid > $excludeseqfile";
+	system $fassub; 
+	system "rm $excludeseqfile.mid";
+	$includeexclude = join "","all_",$excludeseqfile;
+	system "cat $excludeseqfile $totalseqfile > $includeexclude";
+	system "./bplogo_score.py $cladestring $includeexclude > $includeexclude.out";
+	system "cp $includeexclude.out ../$includeexclude.out";
+	$CWD = "$current";
+	system "rm -rf $totalseqdir";
+	$pm->finish;
+    }
+    $pm->wait_all_children;
+##re-run for original sequence files for comparisons for other clades
+    # foreach my $c (split "",qw/ACDEFGHIJKLMNPQRSTVWXY/){
+    #      $f=join "",$clade,"_",$c,".fas"; #when logofun is working
+    #      system "fasgrep ^$c < $cladefile > $f";
+    # }
+    # $fasconvert = join "","fasconvert -fo clustalw ",$clade,"_[A-Z].fas\n";
+    # system $fasconvert;
+    # system "bplogofun -sc -x15 --logo -d final_structureString.txt $clade 2> /dev/null";
+}

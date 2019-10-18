@@ -1,0 +1,118 @@
+GCF_000009705.1_ASM970v1	Nostoc sp. PCC 7120 DNA, complete genome
+GCF_000020025.1_ASM2002v1	Nostoc punctiforme PCC 73102, complete genome
+GCF_000175835.1_ASM17583v1	Cylindrospermopsis raciborskii CS-505 CS505_93, whole genome shotgun sequence
+GCF_000175855.1_ASM17585v1	Raphidiopsis brookii D9 D9_8, whole genome shotgun sequence
+GCF_000196515.1_ASM19651v1	'Nostoc azollae' 0708, complete genome
+GCF_000204075.1_ASM20407v1	Anabaena variabilis ATCC 29413, complete genome
+GCF_000231365.1_ASM23136v1	Fischerella sp. JSC-11 ctg58, whole genome shotgun sequence
+GCF_000312705.1_ASM31270v1	Anabaena sp. 90 chromosome chANA01, complete sequence
+GCF_000315565.1_ASM31556v1	Mastigocladopsis repens PCC 10914 genomic scaffold Mas10914DRAFT_scaffold3.3, whole genome shotgun sequence
+GCF_000315585.1_ASM31558v1	Fischerella sp. PCC 9339 genomic scaffold PCC9339DRAFT_scaffold9.13, whole genome shotgun sequence
+GCF_000316575.1_ASM31657v1	Calothrix sp. PCC 7507, complete genome
+GCF_000316625.1_ASM31662v1	Nostoc sp. PCC 7107, complete genome
+GCF_000316645.1_ASM31664v1	Nostoc sp. PCC 7524, complete genome
+GCF_000316665.1_ASM31666v1	Rivularia sp. PCC 7116, complete genome
+GCF_000317435.1_ASM31743v1	Calothrix sp. PCC 6303, complete genome
+GCF_000317695.1_ASM31769v1	Anabaena cylindrica PCC 7122, complete genome
+GCF_000331305.1_ASM33130v1	Calothrix sp. PCC 7103 genomic scaffold Cal7103DRAFT_CPM.12, whole genome shotgun sequence
+GCF_000332135.1_ASM33213v1	Anabaena sp. PCC 7108 genomic scaffold Ana7108scaffold_1, whole genome shotgun sequence
+GCF_000332255.1_ASM33225v1	cyanobacterium PCC 7702 genomic scaffold Chl7702DRAFT_scaffold_0.1, whole genome shotgun sequence
+GCF_000332295.1_ASM33229v1	Microchaete sp. PCC 7126 genomic scaffold Mic7126DRAFT_MPQ.3, whole genome shotgun sequence
+GCF_000340565.2_ASM34056v3	Nodularia spumigena CCY9414 genome
+GCF_000447295.1_ASM44729v1	Fischerella sp. PCC 9431 genomic scaffold Fis9431DRAFT_Scaffold1.2, whole genome shotgun sequence
+GCF_000517105.1_ASM51710v1	Fischerella sp. PCC 9605 genomic scaffold FIS9605DRAFT_scaffold1.1, whole genome shotgun sequence
+GCF_000582685.1_ASM58268v1	[Scytonema hofmanni] UTEX 2349 Tol9009DRAFT_TPD.1_C, whole genome shotgun sequence
+GCF_000014265.1_ASM1426v1	Trichodesmium erythraeum IMS101, complete genome
+GCF_000155555.1_ASM15555v1	Microcoleus chthonoplastes PCC 7420 scf_1103659003834 genomic scaffold, whole genome shotgun sequence
+GCF_000169095.1_ASM16909v1	Lyngbya sp. PCC 8106 1099428180450, whole genome shotgun sequence
+GCF_000173555.1_ASM17355v1	Arthrospira maxima CS-328 ctg188, whole genome shotgun sequence
+GCF_000175415.3_ASM17541v3	Arthrospira platensis str. Paraca Contig1, whole genome shotgun sequence
+GCF_000180455.1_ASM18045v1	Oscillatoria sp. PCC 6506 whole genome shotgun sequence, Contig418
+GCF_000210375.1_ASM21037v1	Arthrospira platensis NIES-39, complete genome, *** SEQUENCING IN PROGRESS ***
+GCF_000211815.1_ASM21181v1	Lyngbya majuscula 3L genomic scaffold scf45916, whole genome shotgun sequence
+GCF_000214075.1_ASM21407v1	Microcoleus vaginatus FGP-2 ctg181, whole genome shotgun sequence
+GCF_000317105.1_ASM31710v1	Oscillatoria acuminata PCC 6304, complete genome
+GCF_000317475.1_ASM31747v1	Oscillatoria nigro-viridis PCC 7112, complete genome
+GCF_000317125.1_ASM31712v1	Chroococcidiopsis thermalis PCC 7203, complete genome
+GCF_000317555.1_ASM31755v1	Gloeocapsa sp. PCC 7428, complete genome
+GCF_000011345.1_ASM1134v1	Thermosynechococcus elongatus BP-1 chromosome, complete genome
+GCF_000018105.1_ASM1810v1	Acaryochloris marina MBIC11017, complete genome
+GCF_000022045.1_ASM2204v1	Cyanothece sp. PCC 7425, complete genome
+GCF_000238775.1_ASM23877v2	Acaryochloris sp. CCMEE 5410 contig00669, whole genome shotgun sequence
+GCF_000316685.1_ASM31668v1	Synechococcus sp. PCC 6312, complete genome
+GCF_000332355.1_ASM33235v1	Geitlerinema sp. PCC 7105 genomic scaffold Gei7105DRAFT__Contig_8, whole genome shotgun sequence
+GCF_000314005.1_ASM31400v1	Spirulina subsalsa PCC 9445 genomic scaffold Contig210, whole genome shotgun sequence
+GCF_000317145.1_ASM31714v1	Chamaesiphon minutus PCC 6605, complete genome
+GCF_000317495.1_ASM31749v1	Crinalium epipsammum PCC 9333, complete genome
+GCF_000317515.1_ASM31751v1	Microcoleus sp. PCC 7113, complete genome
+GCF_000317615.1_ASM31761v1	Dactylococcopsis salina PCC 8305, complete genome
+GCF_000317635.1_ASM31763v1	Halothece sp. PCC 7418, complete genome
+SmajorPCC6313.fna	Spirulina major PCC 6313 : Contig40
+2505679029.fna	Chroococcidiopsis sp. PCC 6712 : Contig1
+GCF_000009725.1_ASM972v1	Synechocystis sp. PCC 6803 DNA, complete genome
+GCF_000010625.1_ASM1062v1	Microcystis aeruginosa NIES-843 DNA, complete genome
+GCF_000017845.1_ASM1784v1	Cyanothece sp. ATCC 51142 circular chromosome, complete sequence
+GCF_000019485.1_ASM1948v1	Synechococcus sp. PCC 7002, complete genome
+GCF_000021805.1_ASM2180v1	Cyanothece sp. PCC 8801, complete genome
+GCF_000021825.1_ASM2182v1	Cyanothece sp. PCC 7424, complete genome
+GCF_000024045.1_ASM2404v1	Cyanothece sp. PCC 8802, complete genome
+GCF_000025125.1_ASM2512v1	Candidatus Atelocyanobacterium thalassa isolate ALOHA, complete genome
+GCF_000147335.1_ASM14733v1	Cyanothece sp. PCC 7822, complete genome
+GCF_000167195.1_ASM16719v1	Crocosphaera watsonii WH 8501 ctg68, whole genome shotgun sequence
+GCF_000169335.1_ASM16933v1	Cyanothece sp. CCY0110 1101676644536, whole genome shotgun sequence
+GCF_000231425.2_ASM23142v3	Cyanothece sp. ATCC 51472 Cy51472_Contig175.7_C, whole genome shotgun sequence
+GCF_000316605.1_ASM31660v1	Leptolyngbya sp. PCC 7376, complete genome
+GCF_000317025.1_ASM31702v1	Pleurocapsa sp. PCC 7327, complete genome
+GCF_000317575.1_ASM31757v1	Stanieria cyanosphaera PCC 7437, complete genome
+GCF_000317655.1_ASM31765v1	Cyanobacterium stanieri PCC 7202, complete genome
+GCF_000317675.1_ASM31767v1	Cyanobacterium aponinum PCC 10605, complete genome
+GCF_000332035.1_ASM33203v1	Gloeocapsa sp. PCC 73106 scaffold_00001, whole genome shotgun sequence
+GCF_000332055.1_ASM33205v1	Xenococcus sp. PCC 7305 scaffold_00001, whole genome shotgun sequence
+GCF_000332195.1_ASM33219v1	Pleurocapsa sp. PCC 7319 genomic scaffold Pleur7319scaffold_1, whole genome shotgun sequence
+GCF_000332235.1_ASM33223v1	Geminocystis herdmanii PCC 6308 chromosome, whole genome shotgun sequence
+M_aerugpcc7806.fna	Microcystis aeruginosa PCC 7806 genome sequencing data, contig C328
+GCF_000007925.1_ASM792v1	Prochlorococcus marinus subsp. marinus str. CCMP1375 complete genome
+GCF_000011465.1_ASM1146v1	Prochlorococcus marinus MED4 complete genome
+GCF_000011485.1_ASM1148v1	Prochlorococcus marinus MIT9313 complete genome
+GCF_000012465.1_ASM1246v1	Prochlorococcus marinus str. NATL2A, complete genome
+GCF_000012645.1_ASM1264v1	Prochlorococcus marinus str. MIT 9312, complete genome
+GCF_000015645.1_ASM1564v1	Prochlorococcus marinus str. AS9601, complete genome
+GCF_000015665.1_ASM1566v1	Prochlorococcus marinus str. MIT 9515, complete genome
+GCF_000015685.1_ASM1568v1	Prochlorococcus marinus str. NATL1A, complete genome
+GCF_000015705.1_ASM1570v1	Prochlorococcus marinus str. MIT 9303, complete genome
+GCF_000015965.1_ASM1596v1	Prochlorococcus marinus str. MIT 9301, complete genome
+GCF_000018065.1_ASM1806v1	Prochlorococcus marinus str. MIT 9215, complete genome
+GCF_000018585.1_ASM1858v1	Prochlorococcus marinus str. MIT 9211, complete genome
+GCF_000158595.1_ASM15859v1	Prochlorococcus marinus str. MIT 9202 scf_1109798535001 genomic scaffold, whole genome shotgun sequence
+GCF_000010065.1_ASM1006v1	Synechococcus elongatus PCC 6301 DNA, complete genome
+GCF_000012525.1_ASM1252v1	Synechococcus elongatus PCC 7942, complete genome
+GCF_000063525.1_ASM6352v1	Synechococcus sp. RCC307 genomic DNA sequence
+GCF_000153045.1_ASM15304v1	Synechococcus sp. WH 5701 scf_1099465003797 genomic scaffold, whole genome shotgun sequence
+GCF_000155595.1_ASM15559v1	Synechococcus sp. PCC 7335 scf_1103496006898 genomic scaffold, whole genome shotgun sequence
+GCF_000155635.1_ASM15563v1	Cyanobium sp. PCC 7001 scf_1106012173547 genomic scaffold, whole genome shotgun sequence
+GCF_000179235.1_ASM17923v1	Synechococcus sp. CB0101 contig08714, whole genome shotgun sequence
+GCF_000179255.1_ASM17925v1	Synechococcus sp. CB0205 contig07089, whole genome shotgun sequence
+GCF_000316115.1_ASM31611v1	Leptolyngbya sp. PCC 7375 genomic scaffold Lepto7375DRAFT_LPA.1, whole genome shotgun sequence
+GCF_000316515.1_ASM31651v1	Cyanobium gracile PCC 6307, complete genome
+GCF_000317045.1_ASM31704v1	Geitlerinema sp. PCC 7407, complete genome
+GCF_000332095.2_ASM33209v2	Leptolyngbya sp. PCC 6406 genomic scaffold LEP6406DRAFT_scaffold1.1, whole genome shotgun sequence
+GCF_000332315.1_ASM33231v1	Prochlorothrix hollandica PCC 9006 genomic scaffold Pro9006DRAFT_Contig5.9, whole genome shotgun sequence
+GCF_000353285.1_ASM35328v1	Leptolyngbya boryana PCC 6306 genomic scaffold LepboDRAFT_LPC.1, whole genome shotgun sequence
+GCF_000012505.1_ASM1250v1	Synechococcus sp. CC9902, complete genome
+GCF_000012625.1_ASM1262v1	Synechococcus sp. CC9605, complete genome
+GCF_000014585.1_ASM1458v1	Synechococcus sp. CC9311, complete genome
+GCF_000063505.1_ASM6350v1	Synechococcus WH7803 complete genome sequence
+GCF_000153065.1_ASM15306v1	Synechococcus sp. RS9917 scf_1099465004208 genomic scaffold, whole genome shotgun sequence
+GCF_000153285.1_ASM15328v1	Synechococcus sp. WH 7805 scf_1099646010155 genomic scaffold, whole genome shotgun sequence
+GCF_000153805.1_ASM15380v1	Synechococcus sp. BL107 scf_1099739244347 genomic scaffold, whole genome shotgun sequence
+GCF_000153825.1_ASM15382v1	Synechococcus sp. RS9916 scf_1100013018508 genomic scaffold, whole genome shotgun sequence
+GCF_000161795.2_ASM16179v2	Synechococcus sp. WH 8109, complete genome
+GCF_000195975.1_ASM19597v1	Synechococcus sp. WH 8102 complete genome
+GCF_000011385.1_ASM1138v1	Gloeobacter violaceus PCC 7421 chromosome, complete genome
+GCF_000013205.1_ASM1320v1	Synechococcus sp. JA-3-3Ab, complete genome
+GCF_000013225.1_ASM1322v1	Synechococcus sp. JA-2-3B'a(2-13), complete genome
+GCF_000332275.1_ASM33227v1	Synechococcus sp. PCC 7336 chromosome, whole genome shotgun sequence
+GCF_000317065.1_ASM31706v1	Pseudanabaena sp. PCC 7367, complete genome
+GCF_000317085.1_ASM31708v1	Synechococcus sp. PCC 7502, complete genome
+GCF_000332175.1_ASM33217v1	Pseudanabaena sp. PCC 6802 genomic scaffold Pse6802_scaffold_1, whole genome shotgun sequence
+GCF_000332215.1_ASM33221v1	Pseudanabaena biceps PCC 7429 scaffold_00001, whole genome shotgun sequence

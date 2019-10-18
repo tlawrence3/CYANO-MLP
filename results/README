@@ -1,0 +1,6 @@
+Results for CYANO-MLP:
+
+plastid.results.final.txt: plastid classification probabilities, bootstrap replicates, and
+                           ncbi accession numbers for each plastid genome. 
+cyano.LOOCV.boot.txt: cyanobacterial classification probabilities during LOOCV and bootstrap replicates
+permutation.scores_13_100000: LOOCV scores from permutation tests

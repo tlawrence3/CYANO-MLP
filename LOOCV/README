@@ -1,0 +1,27 @@
+[ACGU]_clade.eps: function logos for each nucleotide (ACGU) for each cyanobacterial clade calculated using tsfm
+bplogo_score.py: python script for calculating score vectors from tRNA sequences and clade function logos
+cyano_eight_clades_tRNAs_new.fasta: tRNA sequences for cyanobacterial genomes
+loocv_unique_clades: perl script for running LOOCV analysis
+taxon_eight_clades_new_alpha.txt: cyanobacterial genome with clade labels
+
+Leave-One-Out Cross Validation score vector calculation HOWTO (This may take long to run depending on the # procs used) 
+1. Install tsfm either from the github referenced in the methods or using pip3 tsfm. tsfm is python3 only.
+2  Install BioPython using pip3
+3. Install FAST, Parallel::ForkManager, File::chdir, and Cwd from CPAN
+4. Run ./loocv_unique_clades <taxonfile> <seqfile> <proc_count>
+     taxonfile(taxon_eight_clades_new_alpha.txt): file containing tab-sep cyanobacterial genome name and clade label  
+     seqfile(cyano_eight_clades_tRNAs_new.fasta): fasta file containing aligned tRNA sequences. Sequence header fields 
+       are delimited with "|". The required format of the sequence header for genome scoring is as follows: The first 
+       character following the ">" in the header denotes the functional class of the 
+       tRNA, the second field is the unique genome name, the last field is the clade label.
+     proc_count: number of processors to use for LOOCV analysis.
+5. This will produce a file for each genome. The score vector of interest in each file is labeled with LCV:.
+     Use grep "LCV" all_* > LOOCV.scores to gather all LOOCV score vectors into a single file used for training CYANO-MLP
+6. Sort both the <taxonfile> and LOOCV.scores by genome name. CYANO-MLP expects these files to be in the same order by genome name
+7. A file containing the LOOCV score vectors is available in the parent directory and in each directory containing an iteration
+   of CYANO-MLP.
+
+Scoring genomes:
+1. The clade function logos need to be in the directory where bplogo_score.py is called from.
+2. Run python3 bplogo_score.py <clades to be scored against seperated by spaces> <tRNA sequence file>. The sequence file should
+   follow the format described above. Example: python3 bplogo_score.py A B1 B23 C1 C3 E F G ../data/combined.tRNAs.fasta
