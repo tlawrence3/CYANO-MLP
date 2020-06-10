@@ -1,3 +1,6 @@
+Code and Data for:
+tRNA functional signatures classify plastids as late-branching cyanobacteria (https://doi.org/10.1186/s12862-019-1552-7)
+
 Directories 
 CYANO-MLP: Python code for CYANO-MLP
 LOOCV: Scripts and files to perform Leave-One-Out Cross-Validation analysis
